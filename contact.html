@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact — Momento Photo Booth</title>
+  <meta name="description" content="Book Momento Photo Booth's Magic Mirror photo booth for your wedding, corporate event, or celebration.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;1,300;1,400&family=Montserrat:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<nav id="nav" class="scrolled">
+  <div class="nav-logo">
+    <a href="index.html"><img src="logo.svg" alt="Momento Photo Booth"></a>
+  </div>
+  <ul class="nav-links" id="navLinks">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="portfolio.html">Gallery</a></li>
+    <li><a href="about.html">About</a></li>
+    <li><a href="contact.html">Contact</a></li>
+  </ul>
+  <button class="hamburger" id="hamburger" aria-label="Menu">
+    <span></span><span></span><span></span>
+  </button>
+</nav>
+
+<div class="page-hero">
+  <div class="page-hero-bg"></div>
+  <div class="page-hero-content">
+    <span class="label">Get in Touch</span>
+    <h1>Book Your Date</h1>
+  </div>
+</div>
+
+<section>
+  <div class="contact-wrap">
+    <div class="contact-info">
+      <h3>Ready to Book?</h3>
+      <p>Fill out the form and we'll get back to you within one business day with availability and a custom quote.</p>
+
+      <h3>Perfect For</h3>
+      <p>Weddings, corporate events &amp; brand activations, birthdays, quinceañeras, graduations, and holiday parties.</p>
+
+      <h3>Starting Rates</h3>
+      <p>Essential (2 hrs, Magic Mirror booth): from $395<br>
+         Signature (3 hrs, Magic Mirror booth): from $650<br>
+         Ultimate (4+ hrs, Magic Mirror booth): from $950<br>
+         <span style="font-size:0.85rem; opacity:0.75; font-style:italic;">Final pricing depends on date, location, and add-ons.</span></p>
+
+      <h3>Contact</h3>
+      <p>Email: <a href="mailto:momentophotoboothco@gmail.com" style="text-decoration:underline;">momentophotoboothco@gmail.com</a><br>
+         Phone: <a href="tel:+17326467002" style="text-decoration:underline;">(732) 646-7002</a></p>
+    </div>
+
+    <div>
+      <form name="contact" method="POST" data-netlify="true" netlify-honeypot="bot-field">
+        <input type="hidden" name="form-name" value="contact">
+        <p style="display:none"><input name="bot-field"></p>
+        <input type="text" name="name" placeholder="Your Name" required>
+        <input type="email" name="email" placeholder="Email Address" required>
+        <input type="tel" name="phone" placeholder="Phone Number">
+        <input type="date" name="event-date" placeholder="Event Date">
+        <select name="event-type">
+          <option value="" disabled selected>Type of Event</option>
+          <option value="wedding">Wedding</option>
+          <option value="corporate">Corporate Event</option>
+          <option value="birthday">Birthday / Celebration</option>
+          <option value="other">Other</option>
+        </select>
+        <select name="package">
+          <option value="" disabled selected>Package of Interest</option>
+          <option value="essential">Essential (from $395)</option>
+          <option value="signature">Signature (from $650)</option>
+          <option value="ultimate">Ultimate (from $950)</option>
+          <option value="unsure">Not Sure Yet</option>
+        </select>
+        <textarea name="message" placeholder="Anything else we should know? Location, guest count, special requests…"></textarea>
+        <button type="submit" class="btn btn-filled">Send Enquiry</button>
+      </form>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="footer-left">
+    <div class="logo-text">Momento Photo Booth</div>
+    <p>&copy; 2026 Momento Photo Booth. All rights reserved.</p>
+  </div>
+  <ul class="footer-links">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="portfolio.html">Gallery</a></li>
+    <li><a href="about.html">About</a></li>
+    <li><a href="contact.html">Contact</a></li>
+  </ul>
+</footer>
+
+<script>
+  const nav = document.getElementById('nav');
+  window.addEventListener('scroll', () => nav.classList.toggle('scrolled', window.scrollY > 60));
+  document.getElementById('hamburger').addEventListener('click', () =>
+    document.getElementById('navLinks').classList.toggle('open'));
+</script>
+</body>
+</html>

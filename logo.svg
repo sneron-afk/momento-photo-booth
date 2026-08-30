@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 240" width="480" height="240">
+
+  <!-- Mirror booth icon -->
+  <rect x="188" y="18" width="104" height="72" rx="14" fill="none" stroke="#d4af6a" stroke-width="3"/>
+  <circle cx="240" cy="46" r="7" fill="none" stroke="#d4af6a" stroke-width="2.4"/>
+  <circle cx="240" cy="46" r="2.4" fill="#d4af6a"/>
+  <path d="M240 62 C240 58 233 55 233 61 C233 66 240 72 240 72 C240 72 247 66 247 61 C247 55 240 58 240 62 Z" fill="#e8b4b8"/>
+
+  <!-- Momento wordmark -->
+  <text x="240" y="160" font-family="'Cormorant Garamond', Georgia, 'Times New Roman', serif" font-size="66" font-style="italic" font-weight="500" fill="#f7f1ea" text-anchor="middle">Momento</text>
+
+  <!-- Tagline -->
+  <text x="240" y="192" font-family="Arial, Helvetica, sans-serif" font-size="16" font-weight="400" fill="#d4af6a" text-anchor="middle" letter-spacing="7">PHOTO BOOTH</text>
+
+  <!-- Rules -->
+  <line x1="70" y1="192" x2="150" y2="192" stroke="#d4af6a" stroke-width="1" opacity="0.8"/>
+  <line x1="330" y1="192" x2="410" y2="192" stroke="#d4af6a" stroke-width="1" opacity="0.8"/>
+
+</svg>

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gallery — Momento Photo Booth</title>
+  <meta name="description" content="See Momento Photo Booth in action at weddings, corporate events, and celebrations.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;1,300;1,400&family=Montserrat:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<nav id="nav" class="scrolled">
+  <div class="nav-logo">
+    <a href="index.html"><img src="logo.svg" alt="Momento Photo Booth"></a>
+  </div>
+  <ul class="nav-links" id="navLinks">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="portfolio.html">Gallery</a></li>
+    <li><a href="about.html">About</a></li>
+    <li><a href="contact.html">Contact</a></li>
+  </ul>
+  <button class="hamburger" id="hamburger" aria-label="Menu">
+    <span></span><span></span><span></span>
+  </button>
+</nav>
+
+<div class="page-hero">
+  <div class="page-hero-bg"></div>
+  <div class="page-hero-content">
+    <span class="label">Our Work</span>
+    <h1>Gallery</h1>
+  </div>
+</div>
+
+<section>
+  <div class="section-header" style="margin-bottom: 3rem;">
+    <p>We're building out our gallery with photos from recent events — check back soon, or ask us for samples when you get in touch.</p>
+  </div>
+  <div class="gallery-grid">
+    <div class="gallery-item"><div class="media-placeholder"><span class="mp-icon">✦</span><span>Wedding Reception</span></div></div>
+    <div class="gallery-item"><div class="media-placeholder"><span class="mp-icon">◈</span><span>Corporate Gala</span></div></div>
+    <div class="gallery-item"><div class="media-placeholder"><span class="mp-icon">✦</span><span>Birthday Celebration</span></div></div>
+    <div class="gallery-item"><div class="media-placeholder"><span class="mp-icon">▭</span><span>Magic Mirror Close-Up</span></div></div>
+    <div class="gallery-item"><div class="media-placeholder"><span class="mp-icon">✦</span><span>Guests Posing at the Mirror</span></div></div>
+    <div class="gallery-item"><div class="media-placeholder"><span class="mp-icon">◈</span><span>Custom Print Overlay</span></div></div>
+  </div>
+  <div class="portfolio-cta" style="margin-top:4rem">
+    <a href="contact.html" class="btn btn-filled">Check Availability</a>
+  </div>
+</section>
+
+<footer>
+  <div class="footer-left">
+    <div class="logo-text">Momento Photo Booth</div>
+    <p>&copy; 2026 Momento Photo Booth. All rights reserved.</p>
+  </div>
+  <ul class="footer-links">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="portfolio.html">Gallery</a></li>
+    <li><a href="about.html">About</a></li>
+    <li><a href="contact.html">Contact</a></li>
+  </ul>
+</footer>
+
+<script>
+  const nav = document.getElementById('nav');
+  window.addEventListener('scroll', () => nav.classList.toggle('scrolled', window.scrollY > 60));
+  document.getElementById('hamburger').addEventListener('click', () =>
+    document.getElementById('navLinks').classList.toggle('open'));
+</script>
+</body>
+</html>

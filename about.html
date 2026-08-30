@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About — Momento Photo Booth</title>
+  <meta name="description" content="Momento Photo Booth brings the Magic Mirror photo booth to weddings, corporate events, and celebrations.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;1,300;1,400&family=Montserrat:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<nav id="nav" class="scrolled">
+  <div class="nav-logo">
+    <a href="index.html"><img src="logo.svg" alt="Momento Photo Booth"></a>
+  </div>
+  <ul class="nav-links" id="navLinks">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="portfolio.html">Gallery</a></li>
+    <li><a href="about.html">About</a></li>
+    <li><a href="contact.html">Contact</a></li>
+  </ul>
+  <button class="hamburger" id="hamburger" aria-label="Menu">
+    <span></span><span></span><span></span>
+  </button>
+</nav>
+
+<div class="page-hero">
+  <div class="page-hero-bg"></div>
+  <div class="page-hero-content">
+    <span class="label">Our Story</span>
+    <h1>About Us</h1>
+  </div>
+</div>
+
+<section>
+  <div class="about-page-grid">
+    <div class="media-placeholder">
+      <span class="mp-icon">✦</span>
+      <span>Team Photo Coming Soon</span>
+    </div>
+    <div class="about-page-text">
+      <span class="label">Who We Are</span>
+      <h2>Making Moments Memorable</h2>
+      <p>Momento Photo Booth exists to add a little sparkle to your event. We bring the Magic Mirror photo booth — a full-length, glowing LED mirror booth — to weddings, corporate parties, and celebrations of every kind.</p>
+      <p>Every booth is delivered, set up, and staffed by a friendly attendant who keeps the line moving and the energy up — so you can enjoy your own event instead of managing a photo station.</p>
+      <p>Guests leave with a printed keepsake in hand and a digital copy on their phone within seconds — a memento of the night that lasts long after the last song plays.</p>
+      <a href="contact.html" class="btn" style="margin-top:1rem">Book Your Date</a>
+    </div>
+  </div>
+</section>
+
+<div class="stats">
+  <div>
+    <div class="stat-num">200+</div>
+    <div class="stat-label">Events Captured</div>
+  </div>
+  <div>
+    <div class="stat-num">Unlimited</div>
+    <div class="stat-label">Prints Per Booking</div>
+  </div>
+  <div>
+    <div class="stat-num">Seconds</div>
+    <div class="stat-label">To Digital Sharing</div>
+  </div>
+  <div>
+    <div class="stat-num">100%</div>
+    <div class="stat-label">On-Site Setup</div>
+  </div>
+</div>
+
+<section class="services">
+  <div class="section-header">
+    <span class="label">Our Process</span>
+    <h2>Simple From Start to Finish</h2>
+    <div class="divider"></div>
+  </div>
+  <div class="services-grid">
+    <div class="service-card">
+      <div class="service-icon">01</div>
+      <h3>Book Your Date</h3>
+      <p>Tell us your event date, location, and vibe. We'll confirm availability and put together a package that fits.</p>
+    </div>
+    <div class="service-card">
+      <div class="service-icon">02</div>
+      <h3>We Design Your Overlay</h3>
+      <p>We build a custom print template and on-screen overlay to match your event's colors, names, or branding.</p>
+    </div>
+    <div class="service-card">
+      <div class="service-icon">03</div>
+      <h3>We Set Up On-Site</h3>
+      <p>Our attendant arrives early, sets up the booth, and stays for the full rental to keep things running smoothly.</p>
+    </div>
+    <div class="service-card">
+      <div class="service-icon">04</div>
+      <h3>Guests Take Home Memories</h3>
+      <p>Unlimited prints and instant digital sharing — every guest walks away with something to keep.</p>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="footer-left">
+    <div class="logo-text">Momento Photo Booth</div>
+    <p>&copy; 2026 Momento Photo Booth. All rights reserved.</p>
+  </div>
+  <ul class="footer-links">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="portfolio.html">Gallery</a></li>
+    <li><a href="about.html">About</a></li>
+    <li><a href="contact.html">Contact</a></li>
+  </ul>
+</footer>
+
+<script>
+  const nav = document.getElementById('nav');
+  window.addEventListener('scroll', () => nav.classList.toggle('scrolled', window.scrollY > 60));
+  document.getElementById('hamburger').addEventListener('click', () =>
+    document.getElementById('navLinks').classList.toggle('open'));
+</script>
+</body>
+</html>
