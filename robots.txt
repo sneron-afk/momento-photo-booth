@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://nimble-medovik-4f9f91.netlify.app/sitemap.xml
